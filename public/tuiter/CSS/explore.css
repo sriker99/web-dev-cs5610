@@ -1,7 +1,6 @@
-input[type="text"]::placeholder {
-    padding-left: 30px;
+.wd-zero-right-border{
+    border-right: 0px;
 }
-
 .wd-rounded-buttons{
     border-radius: 20px;
 }
@@ -14,7 +13,6 @@ input[type="text"]::placeholder {
     bottom: 60px;
     color: white;
     font-size: 40px;
-    left: 10px;
 }
 
 .wd-gray-color{
@@ -27,3 +25,6 @@ input[type="text"]::placeholder {
     border-bottom: 1px solid lightgray;
 }
 
+.wd-rounded-images{
+    border-radius: 50%;
+}
