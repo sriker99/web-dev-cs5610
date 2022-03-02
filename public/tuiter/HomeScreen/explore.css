@@ -23,12 +23,19 @@
     border-radius: 50%;
 }
 
-body { background: black }
+body { background-color: black }
 
 .wd-list-group .list-group-item{
     background-color: #343a40;
 }
 
+.wd-post-list-group .list-group-item{
+    background-color: black;
+}
+
+.wd-card-bg{
+    background-color: black;
+}
 .wd-nav-item{
     color: white;
 }
@@ -88,5 +95,17 @@ body { background: black }
 }
 .wd-main-content{
     background-color: #343a40;
+}
 
+.wd-card-border{
+    border-radius: 10px;
+    border: 1px solid gray;
+
+}
+.wd-card-title-border{
+    border-top:1px solid gray;
+}
+
+a{
+    text-decoration: none;
 }

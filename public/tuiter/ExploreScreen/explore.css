@@ -59,10 +59,7 @@ body { background: black }
     border-bottom: 1px solid lightgray;
 }
 
-.wd-button-bg:hover, .wd-button-bg{
-    background-color: rgb(114, 145, 196);
-    border: none;
-}
+
 
 .wd-font-white{
     color: white;
@@ -82,11 +79,11 @@ body { background: black }
 .nav-item.active{
     background-color: rgb(114, 145, 196);
 }
-.nav-link:hover{
-    border: none;
-    color: white;
-}
+
 .wd-main-content{
     background-color: #343a40;
 
+}
+a{
+    text-decoration: none;
 }
