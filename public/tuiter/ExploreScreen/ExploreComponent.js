@@ -5,7 +5,7 @@ const ExploreComponent = () => {
             <div class="row">
                 <div class="col-xxl-11 col-xl-11 col-lg-11 col-md-11 col-sm-11 ps-0">
                     <div class="input-group">
-                        <div class="input-group-text wd-rounded-buttons wd-zero-right-border wd-search-bar-color"><span style="border-right: 0px solid transparent"><i class="fa-solid fa-magnifying-glass"></i></span></div>
+                         <div class="input-group-text wd-rounded-buttons wd-zero-right-border px-2" style="background-color: white"><span style="border-right: 1px solid white">&#128269;</span></div>
                         <input type="text" class="form-control wd-rounded-buttons wd-search-bar-color" placeholder="Search Twitter" id="twitterSearch">
                     </div>
                 </div>
