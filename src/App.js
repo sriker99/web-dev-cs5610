@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import HelloWorld from "./components/HelloWorld";
+import Labs from "./components/Labs";
+import Tuiter from "./components/Tuiter";
+import ExploreScreen from "./components/Tuiter/ExploreScreen";
+import HomeScreen from "./components/Tuiter/HomeScreen";
+import {BrowserRouter,  Route} from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <div>
+                <Route path="/hello" exact={true}><HelloWorld/></Route>
+                <Route path="/labs" exact={true}><Labs/></Route>
+                <Route path="/" exact={true}><Labs/></Route>
+                <Route path="/tuiter/explore" exact={true}><ExploreScreen /></Route>
+                <Route path="/tuiter/home" exact={true}><HomeScreen /></Route>
+                <div className="Container mt-2 mx-4" id="wd-explore"><Route path="/tuiter" exact={true}><Tuiter/></Route></div>
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;
