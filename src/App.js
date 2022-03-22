@@ -15,7 +15,7 @@ function App() {
                 <Route path="/" exact={true}><Labs/></Route>
                 <Route path="/tuiter/explore" exact={true}><ExploreScreen /></Route>
                 <Route path="/tuiter/home" exact={true}><HomeScreen /></Route>
-                <div className="Container mt-2 mx-4" id="wd-explore"><Route path="/tuiter" exact={true}><Tuiter/></Route></div>
+                <div className="Container mt-2 mx-4" id="wd-explore"><Route path="/tuiter/explore" exact={true}><Tuiter/></Route></div>
             </div>
         </BrowserRouter>
     );
