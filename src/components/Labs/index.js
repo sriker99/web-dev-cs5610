@@ -3,6 +3,7 @@ import Classes from "./Classes";
 import Styles from "./Styles";
 import ConditionalOutput from "./ConditionalOutput";
 import TodoList from "./Todo/TodoList";
+import ReduxExamples from "./redux-examples";
 const index = () => {
     return (
         <div>
@@ -10,9 +11,10 @@ const index = () => {
             <Link to="/hello">
                 Hello
             </Link> |
-            <Link to="/tuiter/explore">
+            <Link to="/tuiter/">
                 Tuiter
             </Link>
+            <ReduxExamples />
             <TodoList/>
             <ConditionalOutput/>
             <Styles/>

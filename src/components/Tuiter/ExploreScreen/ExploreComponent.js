@@ -1,12 +1,10 @@
 import PostSummaryList from "../post-summary-list";
 import StarShip from "../../images/Starship.webp";
-import {BrowserRouter, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const ExploreComponent = () => {
     return (
         <>
-            <BrowserRouter>
-
                 <div className="row mb-0">
                     <div className="col-xxl-11 col-xl-11 col-lg-11 col-md-11 col-sm-11 ps-0">
                         <div className="input-group">
@@ -25,19 +23,19 @@ const ExploreComponent = () => {
                 <div className="row mt-0">
                     <ul className="nav nav-tabs my-2 ps-0 wd-nav-bg-border">
                         <li className="nav-item active">
-                            <Link className="nav-link wd-nav-item">For You</Link>
+                            <Link to="#" className="nav-link wd-nav-item">For You</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link wd-nav-item">Trending</Link>
+                            <Link to="#" className="nav-link wd-nav-item">Trending</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link wd-nav-item">News</Link>
+                            <Link to="#" className="nav-link wd-nav-item">News</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link wd-nav-item">Sports</Link>
+                            <Link to="#" className="nav-link wd-nav-item">Sports</Link>
                         </li>
                         <li className="nav-item d-none d-md-block">
-                            <Link className="nav-link wd-nav-item">Entertainment</Link>
+                            <Link to="#" className="nav-link wd-nav-item">Entertainment</Link>
                         </li>
                     </ul>
                 </div>
@@ -46,7 +44,6 @@ const ExploreComponent = () => {
                 </div>
                 <span class="position-relative wd-overlay-name">SpaceX's Starship</span>
                 <PostSummaryList/>
-            </BrowserRouter>
         </>
     );
 }
