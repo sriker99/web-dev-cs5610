@@ -6,8 +6,28 @@ import IconButton from '@mui/material/IconButton';
 import AutoGraphIcon from '@mui/icons-material/AutoGraph';
 import MoodIcon from '@mui/icons-material/Mood';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
-
+import {createTuit} from "../../actions/tuits-actions";
 const WhatsHappening = () => {
+    const tuitObj={
+        topic: "Web Development",
+        postedBy: {
+            "username": "NodeJS"
+        },
+        liked: true,
+        verified: true,
+        handle: "NodeJS",
+        title: "",
+        time: "last month",
+        logo_image: "/img/node_js.png",
+        avatar_image: "/img/node_js.png",
+        tuits: "120K",
+        stats: {
+            comments: 0,
+            retuits: 0,
+            likes: 0,
+            dislikes:0
+        }
+    }
     let [whatsHappening, setWhatsHappening]
         = useState('');
     const dispatch = useDispatch();
@@ -42,7 +62,7 @@ const WhatsHappening = () => {
                 </div>
                 <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
                     <div className="btn btn-primary wd-button-bg wd-rounded-buttons  me-auto" style={{"width":"50%"}}
-                    onClick={tuitClickHandler}>Tuit
+                    onClick={tuitObj.tuit=whatsHappening,()=>createTuit(dispatch,tuitObj)}>Tuit
                     </div>
                 </div>
             </div>
