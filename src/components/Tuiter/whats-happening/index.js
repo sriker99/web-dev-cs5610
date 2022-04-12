@@ -62,7 +62,7 @@ const WhatsHappening = () => {
                 </div>
                 <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
                     <div className="btn btn-primary wd-button-bg wd-rounded-buttons  me-auto" style={{"width":"50%"}}
-                    onClick={tuitObj.tuit=whatsHappening,()=>createTuit(dispatch,tuitObj)}>Tuit
+                    onClick={()=>{tuitObj.tuit=whatsHappening;console.log('tuit obj',tuitObj);createTuit(dispatch,tuitObj)}}>Tuit
                     </div>
                 </div>
             </div>
